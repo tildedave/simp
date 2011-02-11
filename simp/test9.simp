@@ -1,0 +1,9 @@
+if h + 1 then
+   if 3 + h + 2 then
+      l := 0
+   else 
+      skip   
+   end
+else
+   skip
+end

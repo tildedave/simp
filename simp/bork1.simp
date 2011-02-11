@@ -1,0 +1,18 @@
+if h then
+	if h2 then
+		if h3 then
+		     	gr := 0
+		else
+			skip
+		end
+	else
+		skip
+	end
+else
+	skip
+end;
+if gr then
+	l := gr
+else
+	skip
+end

@@ -1,0 +1,6 @@
+if h then
+	gr := 0
+else
+	skip
+end;
+l := gr

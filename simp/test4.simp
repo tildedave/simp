@@ -1,0 +1,14 @@
+if h then 
+	if h2 then
+		temp := 1
+	else
+		skip
+	end
+else
+	l := 0
+end;
+if temp then
+	temp2 := 1
+else
+	l := temp2
+end

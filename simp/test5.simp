@@ -1,0 +1,5 @@
+if h then 
+	l := 1
+else 
+	skip 
+end

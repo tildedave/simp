@@ -1,0 +1,1197 @@
+<constraint-set xmlns="http://openuri.org/constraint">
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="pc50" isvar="true" weight="1" procedure="14"/>
+    <pos>jlift-src/test1/Class3.jif:9,18-27</pos>
+    <because>final java.lang.String{sum(NV2)}[]{args} args</because>
+    <becauseType>jif.ast.JifFormal_c</becauseType>
+    <asString>{pc50} ==_{def} {}@jlift-src/test1/Class3.jif:9,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc50" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="NV51" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:14,25-26</pos>
+    <because>test1.Class3.a</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{NV51} ==_{def} {pc50}@jlift-src/test1/Class3.jif:14,25-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#1" isvar="false"/>
+    </lhs>
+    <rhs name="field:a" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:14,25-26</pos>
+    <because>test1.Class3.a</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{field:a} ==_{def} {Alice: }@jlift-src/test1/Class3.jif:14,25-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="field:a" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="NV52" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:14,25-26</pos>
+    <because>test1.Class3.a</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{NV52} ==_{def} {field:a; NV51}@jlift-src/test1/Class3.jif:14,25-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV51" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="NV52" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:14,25-26</pos>
+    <because>test1.Class3.a</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{NV52} ==_{def} {field:a; NV51}@jlift-src/test1/Class3.jif:14,25-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV52" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="NV53" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV53} ==_{def} {NV52}@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="func0:return_observed" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func0:return_observed} ==_{def} {*!: }@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func0_rv@callto:func0" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="func0:value_returned" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func0:value_returned} ==_{def} {func0_rv@callto:func0}@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func0:value_returned" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="NV54" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV54} ==_{def} {func0:value_returned; pc50}@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc50" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="NV54" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV54} ==_{def} {func0:value_returned; pc50}@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="caller_pc@func0:jlift-src/test1/Class3.jif:18,18-27@callto:func0" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="pc41" isvar="true" weight="1" procedure="12"/>
+    <pos>jlift-src/test1/Class3.jif:18,18-27</pos>
+    <because>int{a} a</because>
+    <becauseType>jif.ast.JifFormal_c</becauseType>
+    <asString>{pc41} ==_{def} {caller_pc@func0:jlift-src/test1/Class3.jif:18,18-27@callto:func0}@jlift-src/test1/Class3.jif:18,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="a@callto:func0" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="NV42" isvar="true" weight="1" procedure="12" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:18,57-58</pos>
+    <because>a</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV42} ==_{def} {a@callto:func0}@jlift-src/test1/Class3.jif:18,57-58</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV42" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="NV43" isvar="true" weight="1" procedure="12" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV43} ==_{def} {NV42}@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="func1:return_observed" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func1:return_observed} ==_{def} {*!: }@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func1_rv@callto:func1" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="func1:value_returned" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func1:value_returned} ==_{def} {func1_rv@callto:func1}@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func1:value_returned" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="NV44" isvar="true" weight="1" procedure="12" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV44} ==_{def} {func1:value_returned; pc41}@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc41" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="NV44" isvar="true" weight="1" procedure="12" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV44} ==_{def} {func1:value_returned; pc41}@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="caller_pc@func1:jlift-src/test1/Class3.jif:20,18-27@callto:func1" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="pc32" isvar="true" weight="1" procedure="15"/>
+    <pos>jlift-src/test1/Class3.jif:20,18-27</pos>
+    <because>int{a} a</because>
+    <becauseType>jif.ast.JifFormal_c</becauseType>
+    <asString>{pc32} ==_{def} {caller_pc@func1:jlift-src/test1/Class3.jif:20,18-27@callto:func1}@jlift-src/test1/Class3.jif:20,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="a@callto:func1" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="NV33" isvar="true" weight="1" procedure="15" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:20,57-58</pos>
+    <because>a</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV33} ==_{def} {a@callto:func1}@jlift-src/test1/Class3.jif:20,57-58</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV33" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="NV34" isvar="true" weight="1" procedure="15" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV34} ==_{def} {NV33}@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="func2:return_observed" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func2:return_observed} ==_{def} {*!: }@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func2_rv@callto:func2" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="func2:value_returned" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func2:value_returned} ==_{def} {func2_rv@callto:func2}@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func2:value_returned" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="NV35" isvar="true" weight="1" procedure="15" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV35} ==_{def} {func2:value_returned; pc32}@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc32" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="NV35" isvar="true" weight="1" procedure="15" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV35} ==_{def} {func2:value_returned; pc32}@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="pc23" isvar="true" weight="2" procedure="10"/>
+    <pos>jlift-src/test1/Class3.jif:22,18-27</pos>
+    <because>int{a} a</because>
+    <becauseType>jif.ast.JifFormal_c</becauseType>
+    <asString>{pc23} ==_{def} {caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2}@jlift-src/test1/Class3.jif:22,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="a@callto:func2" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV24" isvar="true" weight="2" procedure="10" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:22,57-58</pos>
+    <because>a</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV24} ==_{def} {a@callto:func2}@jlift-src/test1/Class3.jif:22,57-58</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV24" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="NV25" isvar="true" weight="2" procedure="10" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV25} ==_{def} {NV24}@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="func3:return_observed" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func3:return_observed} ==_{def} {*!: }@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func3_rv@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="func3:value_returned" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func3:value_returned} ==_{def} {func3_rv@callto:func3}@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func3:value_returned" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV26" isvar="true" weight="2" procedure="10" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV26} ==_{def} {func3:value_returned; pc23}@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc23" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="NV26" isvar="true" weight="2" procedure="10" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV26} ==_{def} {func3:value_returned; pc23}@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="caller_pc@func3:jlift-src/test1/Class3.jif:24,18-27@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="pc11" isvar="true" weight="2" procedure="11"/>
+    <pos>jlift-src/test1/Class3.jif:24,18-27</pos>
+    <because>int{a} a</because>
+    <becauseType>jif.ast.JifFormal_c</becauseType>
+    <asString>{pc11} ==_{def} {caller_pc@func3:jlift-src/test1/Class3.jif:24,18-27@callto:func3}@jlift-src/test1/Class3.jif:24,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="a@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV12" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:25,24-25</pos>
+    <because>a</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV12} ==_{def} {a@callto:func3}@jlift-src/test1/Class3.jif:25,24-25</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV12" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="NV13" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:25,8-26</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV13} ==_{def} {NV12}@jlift-src/test1/Class3.jif:25,8-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV12" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="LATTICE#0" isvar="false"/>
+    <pos>jlift-src/test1/Class3.jif:25,24-25</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV12} &lt;= {}@jlift-src/test1/Class3.jif:25,24-25</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="writeout:return_observed" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:25,8-26</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{writeout:return_observed} ==_{def} {*!: }@jlift-src/test1/Class3.jif:25,8-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="writeout:value_returned" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:25,8-26</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{writeout:value_returned} ==_{def} {*!: }@jlift-src/test1/Class3.jif:25,8-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="writeout:value_returned" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV14" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:25,8-26</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV14} ==_{def} {writeout:value_returned; pc11}@jlift-src/test1/Class3.jif:25,8-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc11" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="NV14" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:25,8-26</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV14} ==_{def} {writeout:value_returned; pc11}@jlift-src/test1/Class3.jif:25,8-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="caller_pc@writeout:jlift-src/test1/Class3.jif:29,18-31@callto:writeout" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="pc4" isvar="true" weight="2" procedure="0"/>
+    <pos>jlift-src/test1/Class3.jif:29,18-31</pos>
+    <because>int{n} n</because>
+    <becauseType>jif.ast.JifFormal_c</becauseType>
+    <asString>{pc4} ==_{def} {caller_pc@writeout:jlift-src/test1/Class3.jif:29,18-31@callto:writeout}@jlift-src/test1/Class3.jif:29,18-31</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc4" isvar="true" weight="2" procedure="0"/>
+    </lhs>
+    <rhs name="NV5" isvar="true" weight="2" procedure="0" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-53</pos>
+    <because>System[{L_var@2}].out</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{NV5} ==_{def} {pc4}@jlift-src/test1/Class3.jif:29,43-53</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="field:out" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-53</pos>
+    <because>System[{L_var@2}].out</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{field:out} ==_{def} {}@jlift-src/test1/Class3.jif:29,43-53</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="field:out" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV6" isvar="true" weight="2" procedure="0" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-53</pos>
+    <because>System[{L_var@2}].out</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{NV6} ==_{def} {field:out; NV5}@jlift-src/test1/Class3.jif:29,43-53</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV5" isvar="true" weight="2" procedure="0"/>
+    </lhs>
+    <rhs name="NV6" isvar="true" weight="2" procedure="0" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-53</pos>
+    <because>System[{L_var@2}].out</because>
+    <becauseType>polyglot.ast.Field_c</becauseType>
+    <asString>{NV6} ==_{def} {field:out; NV5}@jlift-src/test1/Class3.jif:29,43-53</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="NV7" isvar="true" weight="2" procedure="0" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:29,62-63</pos>
+    <because>n</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV7} ==_{def} {}@jlift-src/test1/Class3.jif:29,62-63</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV7" isvar="true" weight="2" procedure="0"/>
+    </lhs>
+    <rhs name="NV8" isvar="true" weight="2" procedure="0" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-64</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV8} ==_{def} {NV7}@jlift-src/test1/Class3.jif:29,43-64</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV7" isvar="true" weight="2" procedure="0"/>
+    </lhs>
+    <rhs name="LATTICE#0" isvar="false"/>
+    <pos>jlift-src/test1/Class3.jif:29,62-63</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV7} &lt;= {}@jlift-src/test1/Class3.jif:29,62-63</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="println:return_observed" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-64</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{println:return_observed} ==_{def} {*!: }@jlift-src/test1/Class3.jif:29,43-64</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="println:value_returned" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-64</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{println:value_returned} ==_{def} {*!: }@jlift-src/test1/Class3.jif:29,43-64</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="println:value_returned" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV9" isvar="true" weight="2" procedure="0" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-64</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV9} ==_{def} {println:value_returned; pc4}@jlift-src/test1/Class3.jif:29,43-64</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc4" isvar="true" weight="2" procedure="0"/>
+    </lhs>
+    <rhs name="NV9" isvar="true" weight="2" procedure="0" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-64</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV9} ==_{def} {println:value_returned; pc4}@jlift-src/test1/Class3.jif:29,43-64</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV6" isvar="true" weight="2" procedure="0"/>
+    </lhs>
+    <rhs name="receiver:3" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-64</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{receiver:3} ==_{def} {NV6}@jlift-src/test1/Class3.jif:29,43-64</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV7" isvar="true" weight="2" procedure="0"/>
+    </lhs>
+    <rhs name="arg1label:9" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:29,43-64</pos>
+    <because>System[{L_var@2}].out.println(n)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{arg1label:9} ==_{def} {NV7}@jlift-src/test1/Class3.jif:29,43-64</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="R10" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:29,18-31</pos>
+    <because>public static void writeout(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R10} ==_{def} {*!: }@jlift-src/test1/Class3.jif:29,18-31</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R10" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="caller_pc@writeout:jlift-src/test1/Class3.jif:29,18-31@callto:writeout" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:29,18-31</pos>
+    <because>public static void writeout(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R10} &lt;= {caller_pc@writeout:jlift-src/test1/Class3.jif:29,18-31@callto:writeout}@jlift-src/test1/Class3.jif:29,18-31</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc11" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="caller_pc@writeout:jlift-src/test1/Class3.jif:29,18-31@callto:writeout" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:25,8-26</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{caller_pc@writeout:jlift-src/test1/Class3.jif:29,18-31@callto:writeout} ==_{def} {pc11}@jlift-src/test1/Class3.jif:25,8-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV12" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="arg1label:8" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:25,8-26</pos>
+    <because>test1.Class3.writeout(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{arg1label:8} ==_{def} {NV12}@jlift-src/test1/Class3.jif:25,8-26</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="a@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV15" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:26,15-16</pos>
+    <because>a</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV15} ==_{def} {a@callto:func3}@jlift-src/test1/Class3.jif:26,15-16</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="a@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV16" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:26,19-20</pos>
+    <because>a</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV16} ==_{def} {a@callto:func3}@jlift-src/test1/Class3.jif:26,19-20</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV16" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="NV17" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:26,15-20</pos>
+    <because>a * a</because>
+    <becauseType>jif.ast.JifBinary_c</becauseType>
+    <asString>{NV17} ==_{def} {NV16; NV15}@jlift-src/test1/Class3.jif:26,15-20</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV15" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="NV17" isvar="true" weight="2" procedure="11" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:26,15-20</pos>
+    <because>a * a</because>
+    <becauseType>jif.ast.JifBinary_c</becauseType>
+    <asString>{NV17} ==_{def} {NV16; NV15}@jlift-src/test1/Class3.jif:26,15-20</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc11" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="R18" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:26,8-21</pos>
+    <because>return a * a;</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R18} ==_{def} {pc11}@jlift-src/test1/Class3.jif:26,8-21</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV17" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="func3_rv@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:26,8-21</pos>
+    <because>return a * a;</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{NV17} &lt;= {func3_rv@callto:func3}@jlift-src/test1/Class3.jif:26,8-21</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc11" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="R19" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:26,8-21</pos>
+    <because>return a * a;</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R19} ==_{def} {pc11}@jlift-src/test1/Class3.jif:26,8-21</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R19" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="R21" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:24,35-27:5</pos>
+    <because>{ eval(test1.Class3.writeout(a)); return a * a; }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R21} ==_{def} {R19}@jlift-src/test1/Class3.jif:24,35-27:5</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc11" isvar="true" weight="2" procedure="11"/>
+    </lhs>
+    <rhs name="R22" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:24,35-27:5</pos>
+    <because>{ eval(test1.Class3.writeout(a)); return a * a; }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R22} ==_{def} {pc11}@jlift-src/test1/Class3.jif:24,35-27:5</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R22" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="caller_pc@func3:jlift-src/test1/Class3.jif:24,18-27@callto:func3" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:24,18-27</pos>
+    <because>public static int{sum(func3_rv)} func3(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R22} &lt;= {caller_pc@func3:jlift-src/test1/Class3.jif:24,18-27@callto:func3}@jlift-src/test1/Class3.jif:24,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV24" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="a@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{a@callto:func3} ==_{def} {NV24}@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc23" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="caller_pc@func3:jlift-src/test1/Class3.jif:24,18-27@callto:func3" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{caller_pc@func3:jlift-src/test1/Class3.jif:24,18-27@callto:func3} ==_{def} {pc23}@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV24" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="arg1label:7" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,44-59</pos>
+    <because>test1.Class3.func3(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{arg1label:7} ==_{def} {NV24}@jlift-src/test1/Class3.jif:22,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func3:return_observed" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="R27" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,37-60</pos>
+    <because>return test1.Class3.func3(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R27} ==_{def} {func3:return_observed; pc23}@jlift-src/test1/Class3.jif:22,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc23" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="R27" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,37-60</pos>
+    <because>return test1.Class3.func3(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R27} ==_{def} {func3:return_observed; pc23}@jlift-src/test1/Class3.jif:22,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV26" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="func2_rv@callto:func2" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,37-60</pos>
+    <because>return test1.Class3.func3(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{NV26} &lt;= {func2_rv@callto:func2}@jlift-src/test1/Class3.jif:22,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc23" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="R28" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,37-60</pos>
+    <because>return test1.Class3.func3(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R28} ==_{def} {pc23}@jlift-src/test1/Class3.jif:22,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R28" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="R30" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,35-62</pos>
+    <because>{ return test1.Class3.func3(a); }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R30} ==_{def} {R28}@jlift-src/test1/Class3.jif:22,35-62</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc23" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="R31" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,35-62</pos>
+    <because>{ return test1.Class3.func3(a); }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R31} ==_{def} {pc23}@jlift-src/test1/Class3.jif:22,35-62</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R31" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,18-27</pos>
+    <because>public static int{sum(func2_rv)} func2(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R31} &lt;= {caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2}@jlift-src/test1/Class3.jif:22,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV33" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="a@callto:func2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{a@callto:func2} ==_{def} {NV33}@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc32" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2} ==_{def} {pc32}@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV33" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="arg1label:6" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,44-59</pos>
+    <because>test1.Class3.func2(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{arg1label:6} ==_{def} {NV33}@jlift-src/test1/Class3.jif:20,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func2:return_observed" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="R36" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,37-60</pos>
+    <because>return test1.Class3.func2(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R36} ==_{def} {func2:return_observed; pc32}@jlift-src/test1/Class3.jif:20,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc32" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="R36" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,37-60</pos>
+    <because>return test1.Class3.func2(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R36} ==_{def} {func2:return_observed; pc32}@jlift-src/test1/Class3.jif:20,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV35" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="func1_rv@callto:func1" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,37-60</pos>
+    <because>return test1.Class3.func2(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{NV35} &lt;= {func1_rv@callto:func1}@jlift-src/test1/Class3.jif:20,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc32" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="R37" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,37-60</pos>
+    <because>return test1.Class3.func2(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R37} ==_{def} {pc32}@jlift-src/test1/Class3.jif:20,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R37" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="R39" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,35-62</pos>
+    <because>{ return test1.Class3.func2(a); }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R39} ==_{def} {R37}@jlift-src/test1/Class3.jif:20,35-62</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc32" isvar="true" weight="1" procedure="15"/>
+    </lhs>
+    <rhs name="R40" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,35-62</pos>
+    <because>{ return test1.Class3.func2(a); }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R40} ==_{def} {pc32}@jlift-src/test1/Class3.jif:20,35-62</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R40" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="caller_pc@func1:jlift-src/test1/Class3.jif:20,18-27@callto:func1" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:20,18-27</pos>
+    <because>public static int{sum(func1_rv)} func1(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R40} &lt;= {caller_pc@func1:jlift-src/test1/Class3.jif:20,18-27@callto:func1}@jlift-src/test1/Class3.jif:20,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV42" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="a@callto:func1" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{a@callto:func1} ==_{def} {NV42}@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc41" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="caller_pc@func1:jlift-src/test1/Class3.jif:20,18-27@callto:func1" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{caller_pc@func1:jlift-src/test1/Class3.jif:20,18-27@callto:func1} ==_{def} {pc41}@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV42" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="arg1label:5" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,44-59</pos>
+    <because>test1.Class3.func1(a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{arg1label:5} ==_{def} {NV42}@jlift-src/test1/Class3.jif:18,44-59</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func1:return_observed" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="R45" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,37-60</pos>
+    <because>return test1.Class3.func1(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R45} ==_{def} {func1:return_observed; pc41}@jlift-src/test1/Class3.jif:18,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc41" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="R45" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,37-60</pos>
+    <because>return test1.Class3.func1(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R45} ==_{def} {func1:return_observed; pc41}@jlift-src/test1/Class3.jif:18,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV44" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="func0_rv@callto:func0" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,37-60</pos>
+    <because>return test1.Class3.func1(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{NV44} &lt;= {func0_rv@callto:func0}@jlift-src/test1/Class3.jif:18,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc41" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="R46" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,37-60</pos>
+    <because>return test1.Class3.func1(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{R46} ==_{def} {pc41}@jlift-src/test1/Class3.jif:18,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R46" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="R48" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,35-62</pos>
+    <because>{ return test1.Class3.func1(a); }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R48} ==_{def} {R46}@jlift-src/test1/Class3.jif:18,35-62</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc41" isvar="true" weight="1" procedure="12"/>
+    </lhs>
+    <rhs name="R49" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,35-62</pos>
+    <because>{ return test1.Class3.func1(a); }</because>
+    <becauseType>polyglot.ast.Block_c</becauseType>
+    <asString>{R49} ==_{def} {pc41}@jlift-src/test1/Class3.jif:18,35-62</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R49" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="caller_pc@func0:jlift-src/test1/Class3.jif:18,18-27@callto:func0" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:18,18-27</pos>
+    <because>public static int{sum(func0_rv)} func0(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R49} &lt;= {caller_pc@func0:jlift-src/test1/Class3.jif:18,18-27@callto:func0}@jlift-src/test1/Class3.jif:18,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV52" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="a@callto:func0" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{a@callto:func0} ==_{def} {NV52}@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc50" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="caller_pc@func0:jlift-src/test1/Class3.jif:18,18-27@callto:func0" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{caller_pc@func0:jlift-src/test1/Class3.jif:18,18-27@callto:func0} ==_{def} {pc50}@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV52" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="arg1label:3" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:14,12-27</pos>
+    <because>test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{arg1label:3} ==_{def} {NV52}@jlift-src/test1/Class3.jif:14,12-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV54" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="local:b" isvar="true" weight="1" procedure="14"/>
+    <pos>jlift-src/test1/Class3.jif:14,8-9</pos>
+    <because>b = test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>polyglot.ast.LocalAssign_c</becauseType>
+    <asString>{NV54} &lt;= {local:b}@jlift-src/test1/Class3.jif:14,8-9</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc50" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="local:b" isvar="true" weight="1" procedure="14"/>
+    <pos>jlift-src/test1/Class3.jif:14,8-9</pos>
+    <because>b = test1.Class3.func0(test1.Class3.a)</because>
+    <becauseType>polyglot.ast.LocalAssign_c</becauseType>
+    <asString>{pc50} &lt;= {local:b}@jlift-src/test1/Class3.jif:14,8-9</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="NV55" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:15,21-22</pos>
+    <because>9</because>
+    <becauseType>polyglot.ast.IntLit_c</becauseType>
+    <asString>{NV55} ==_{def} {*!: }@jlift-src/test1/Class3.jif:15,21-22</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV55" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="NV56" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV56} ==_{def} {NV55}@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="func2:return_observed:2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func2:return_observed:2} ==_{def} {*!: }@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func2_rv@callto:func2:2" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="func2:value_returned:2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{func2:value_returned:2} ==_{def} {func2_rv@callto:func2:2}@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="func2:value_returned:2" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="NV57" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV57} ==_{def} {func2:value_returned:2; pc50}@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc50" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="NV57" isvar="true" weight="1" procedure="14" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{NV57} ==_{def} {func2:value_returned:2; pc50}@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2:2" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="pc23" isvar="true" weight="2" procedure="10"/>
+    <pos>jlift-src/test1/Class3.jif:22,18-27</pos>
+    <because>int{a} a</because>
+    <becauseType>jif.ast.JifFormal_c</becauseType>
+    <asString>{pc23} ==_{def} {caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2:2}@jlift-src/test1/Class3.jif:22,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="a@callto:func2:2" isvar="true" weight="2" procedure="-1"/>
+    </lhs>
+    <rhs name="NV24" isvar="true" weight="2" procedure="10" canDecl="true"/>
+    <pos>jlift-src/test1/Class3.jif:22,57-58</pos>
+    <because>a</because>
+    <becauseType>polyglot.ast.Local_c</becauseType>
+    <asString>{NV24} ==_{def} {a@callto:func2:2}@jlift-src/test1/Class3.jif:22,57-58</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV26" isvar="true" weight="2" procedure="10"/>
+    </lhs>
+    <rhs name="func2_rv@callto:func2:2" isvar="true" weight="2" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,37-60</pos>
+    <because>return test1.Class3.func3(a);</because>
+    <becauseType>polyglot.ast.Return_c</becauseType>
+    <asString>{NV26} &lt;= {func2_rv@callto:func2:2}@jlift-src/test1/Class3.jif:22,37-60</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R31" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2:2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:22,18-27</pos>
+    <because>public static int{sum(func2_rv)} func2(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R31} &lt;= {caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2:2}@jlift-src/test1/Class3.jif:22,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV55" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="a@callto:func2:2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{a@callto:func2:2} ==_{def} {NV55}@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="pc50" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2:2" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27@callto:func2:2} ==_{def} {pc50}@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="NV55" isvar="true" weight="1" procedure="14"/>
+    </lhs>
+    <rhs name="arg1label:4" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:15,8-23</pos>
+    <because>test1.Class3.func2(9)</because>
+    <becauseType>jif.ast.JifCall_c</becauseType>
+    <asString>{arg1label:4} ==_{def} {NV55}@jlift-src/test1/Class3.jif:15,8-23</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="LATTICE#0" isvar="false"/>
+    </lhs>
+    <rhs name="R58" isvar="true" weight="1" procedure="-1"/>
+    <pos>jlift-src/test1/Class3.jif:9,18-27</pos>
+    <because>public static void main(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R58} ==_{def} {*!: }@jlift-src/test1/Class3.jif:9,18-27</asString>
+  </con>
+  <con>
+    <lhs>
+      <label name="R58" isvar="true" weight="1" procedure="-1"/>
+    </lhs>
+    <rhs name="LATTICE#0" isvar="false"/>
+    <pos>jlift-src/test1/Class3.jif:9,18-27</pos>
+    <because>public static void main(...)</because>
+    <becauseType>jif.ast.JifMethodDecl_c</becauseType>
+    <asString>{R58} &lt;= {}@jlift-src/test1/Class3.jif:9,18-27</asString>
+  </con>
+  <lattice>
+    <label name="{Alice: }" id="1"/>
+    <label name="{*!: }" id="0"/>
+    <lt lhs="0" rhs="1"/>
+  </lattice>
+  <procedureList>
+    <procedure name="method public static void writeout{sum(caller_pc@writeout:jlift-src/test1/Class3.jif:29,18-31)}(int{n}) : {*!: }" id="0"/>
+    <procedure name="constructor public public java.lang.Object()" id="1"/>
+    <procedure name="constructor public public test1.Class3()" id="2"/>
+    <procedure name="method public static int{sum(funct2_rv)} funct2{sum(caller_pc@funct2:jlift-src/test2/Class1.jif:21,18-28)}(int{param}) : {*!: }" id="3"/>
+    <procedure name="constructor public public test2.Class1(int, int)" id="4"/>
+    <procedure name="constructor public public test2.Class1()" id="5"/>
+    <procedure name="method native public void println{*: }(int{v1}) : {*!: }" id="6"/>
+    <procedure name="method native public void println{*: }(java.lang.String{v2}) : {*!: }" id="7"/>
+    <procedure name="method public static void funct3{sum(caller_pc@funct3:jlift-src/test3/Class2.jif:5,18-29)}() : {*!: }" id="8"/>
+    <procedure name="method public static void funct1{sum(caller_pc@funct1:jlift-src/test2/Class1.jif:19,18-29)}() : {*!: }" id="9"/>
+    <procedure name="method public static int{sum(func2_rv)} func2{sum(caller_pc@func2:jlift-src/test1/Class3.jif:22,18-27)}(int{a}) : {*!: }" id="10"/>
+    <procedure name="method public static int{sum(func3_rv)} func3{sum(caller_pc@func3:jlift-src/test1/Class3.jif:24,18-27)}(int{a}) : {*!: }" id="11"/>
+    <procedure name="method public static int{sum(func0_rv)} func0{sum(caller_pc@func0:jlift-src/test1/Class3.jif:18,18-27)}(int{a}) : {*!: }" id="12"/>
+    <procedure name="method public static int{sum(funct4_rv)} funct4{sum(caller_pc@funct4:jlift-src/test3/Class2.jif:7,18-28)}(int{param}) : {*!: }" id="13"/>
+    <procedure name="method public static void main{}(java.lang.String{sum(NV2)}[]{args}) : {*!: }" id="14"/>
+    <procedure name="method public static int{sum(func1_rv)} func1{sum(caller_pc@func1:jlift-src/test1/Class3.jif:20,18-27)}(int{a}) : {*!: }" id="15"/>
+    <procedure name="constructor public public test3.Class2()" id="16"/>
+  </procedureList>
+
+</constraint-set>
